@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gameboy Advance Online</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="gameboy.css" />
+    <style>
+    body {
+        font: 62.5% "Trebuchet MS", sans-serif;
+        margin: 50px;
+    }
+    
+    .demoHeaders {
+        margin-top: 2em;
+    }
+    
+    #dialog-link {
+        padding: .4em 1em .4em 20px;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    #dialog-link span.ui-icon {
+        margin: 0 5px 0 0;
+        position: absolute;
+        left: .2em;
+        top: 50%;
+        margin-top: -8px;
+    }
+    
+    #icons {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #icons li {
+        margin: 2px;
+        position: relative;
+        padding: 4px 0;
+        cursor: pointer;
+        float: left;
+        list-style: none;
+    }
+    
+    #icons span.ui-icon {
+        float: left;
+        margin: 0 4px;
+    }
+    
+    .fakewindowcontain .ui-widget-overlay {
+        position: absolute;
+    }
+    
+    select {
+        width: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Gameboy Advance Online!</h1>
+    <div class="ui-widget">
+        <p>This page allows you to select a game. </p>
+    </div>
+    <!-- Accordion -->
+    <h2 class="demoHeaders">Select a Game</h2>
+    <div id="accordion">
+        <h3>A</h3>
+        <div> <li><a href="http://jsemu2.github.io/gba/launcher.html#advancewars">Advance Wars</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#advancewars2">Advance Wars 2</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#aladdin">Aladdin</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#alienhominid">Alien Hominid</a></li></div>
+        <h3>B</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#bomberman_max2blue">Bomberman Max 2 - Blue Advance</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#bomberman_tournament">Bomberman Tournament</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#bubblebobble">Bubble Bobble: Old and New</a></li></div>
+        <h3>C</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#croket1">Croket! - Yume no Banker Survival!</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#croket2">Croket! 2 - Yami no Bank to Banqueen</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#croket3">Croket! 3 - Granu Oukoku no Nazo</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#croket4">Croket! 4 - Bank no Mori no Mamorigami</a></li></div>
+        <h3>D</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#digimon_racing">Digimon Racing</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#dbz_supersonic">Dragon Ball Z - Supersonic Warriors</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#drilldozer">Drill Dozer</a></li></div>
+        <h3>E</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#earthwormjim">Earthworm Jim</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#earthwormjim2">Earthworm Jim 2</a></li></div>
+        <h3>F</h3>
+        <div> <li><a href="http://jsemu2.github.io/gba/launcher.html#ff1and2">Final Fantasy 1 &amp; 2 Advance</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#ff4S">Final Fantasy IV Advance (Sound Restoration Mod)</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#ff6">Final Fantasy VI Advance</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#final_fantasy_tactics">Final Fantasy Tactics Advance</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#fire_emblem">Fire Emblem</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#frogger1">Frogger Advance - The Great Quest</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#frogger2">Frogger's Adventures - Temple of the Frog</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#frogger3">Frogger's Adventures 2 - The Lost Wand</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#fzero_gp">F-Zero - GP Legend</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#fzero_max">F-Zero - Maximum Velocity</a></li></div>
+        <h3>G</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#gamewatch4">Game &amp; Watch Gallery 4</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#goldensun">Golden Sun</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#gunstar_super_heroes">Gunstar Super Heroes</a></li></div>
+        <h3>H</h3>
+        <div> <li><a href="http://jsemu2.github.io/gba/launcher.html#hamtaro_heartbreak">Hamtaro - Ham-Ham Heartbreak</a></li></div>
+        <h3>K</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#kirbymirror">Kirby &amp; The Amazing Mirror</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#kirbynightmare">Kirby: Nightmare in Dreamland</a></li></div>
+        <h3>M</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#superstar">Mario &amp; Luigi: Superstar Saga</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#mariokart">Mario Kart: Super Circuit</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#marioparty">Mario Party Advance</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#mariopinball">Mario Pinball Land</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megamanbass">Megaman &amp; Bass</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_battle1">Megaman Battle Network 1</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_battle2">Megaman Battle Network 2</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_battle3_blue">Megaman Battle Network 3 Blue</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_battle4_blue">Megaman Battle Network 4 Blue Moon</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_battle4_red">Megaman Battle Network 4 Red Sun</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_battle5">Megaman Battle Network 5 Team Protoman</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_battle6">Megaman Battle Network 6 Cybeast Falzar</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_zero1">Megaman Zero</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_zero2">Megaman Zero 2</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_zero3">Megaman Zero 3</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#megaman_zero4">Megaman Zero 4</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#metalslug">Metal Slug Advance</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#metroid_fusion">Metriod Fusion</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#momotarou_dentetsu">Momotarou Dentetsu G Gold Deck wo Tsukure!</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#monopoly">Monopoly</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#monster_force">Monster Force</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#mortal_kombat">Mortal Kombat Advance</a></li></div>
+        <h3>P</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#pacman_world">Pacman World</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#pacman_world2">Pacman World 2</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#pokemonemerald">Pokemon Emerald</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#pokemongreen">Pokemon Leaf Green</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#pokemonred">Pokemon Fire Red</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#mysteryred">Pokemon Mystery Dungeon Red</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#pokemonruby">Pokemon Ruby</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#pokemonsapphire">Pokemon Sapphire</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#gba_video_pokemon_1">Pokemon Video Show Pak 1</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#gba_video_pokemon_2">Pokemon Video Show Pak 2</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#gba_video_pokemon_3">Pokemon Video Show Pak 3</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#gba_video_pokemon_4">Pokemon Video Show Pak 4</a></li></div>
+        <h3>S</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#sonic_advance">Sonic Advance</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#sonic_advance2">Sonic Advance 2</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#sonic_advance3">Sonic Advance 3</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#sonicbattle">Sonic Battle</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#sonicpinball">Sonic Pinball</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#spyro_adventure">Spyro Adventure</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#spyro_ice">Spyro: Season of Ice</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#spyro_flame">Spyro 2: Season of Flame</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#supermarioadvance">Super Mario Advance</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#supermarioadvance2">Super Mario Advance 2</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#supermarioadvance3">Super Mario Advance 3</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#supermarioadvance4">Super Mario Advance 4</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#supermonkeyballjr">Super Monkey Ball Jr</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#super_street_fighter_2_turbo_revival">Super Street Fighter II: Turbo Revival</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#super_street_fighter_3_alpha">Super Street Fighter III: Alpha</a></li></div>
+        <h3>T</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#tales_of_phantasia">Tales of Phantasia</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#tak2_staff_of_dreams">Tak 2: The Staff of Dreams</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#tmnt">Teenage Mutant Ninja Turtles</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#tetris_worlds">Tetris Worlds</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#zelda_past">The Legend of Zelda: A Link to the Past</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#zelda_minish">The Legend of Zelda: The Minish Cap</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#sims_bustin_out">The Sims: Bustin ' Out</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#sims2">The Sims 2</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#simpsons">The Simpsons: Road Rage</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#turok_evolution">Turok Evolution</a></li></div>
+        <h3>W</h3>
+        <div><li><a href="http://jsemu2.github.io/gba/launcher.html#warioland4">Wario Land 4</a></li>
+        <li><a href="http://jsemu2.github.io/gba/launcher.html#wario_ware">Wario Ware Inc</a></li></div>
+    </div>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+    $("#accordion").accordion();
+
+
+
+    var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+    ];
+    $("#autocomplete").autocomplete({
+        source: availableTags
+    });
+
+
+
+    $("#button").button();
+    $("#radioset").buttonset();
+
+
+
+    $("#tabs").tabs();
+
+
+
+    $("#dialog").dialog({
+        autoOpen: false,
+        width: 400,
+        buttons: [{
+            text: "Ok",
+            click: function() {
+                $(this).dialog("close");
+            }
+        }, {
+            text: "Cancel",
+            click: function() {
+                $(this).dialog("close");
+            }
+        }]
+    });
+
+    // Link to open the dialog
+    $("#dialog-link").click(function(event) {
+        $("#dialog").dialog("open");
+        event.preventDefault();
+    });
+
+
+
+    $("#datepicker").datepicker({
+        inline: true
+    });
+
+
+
+    $("#slider").slider({
+        range: true,
+        values: [17, 67]
+    });
+
+
+
+    $("#progressbar").progressbar({
+        value: 20
+    });
+
+
+
+    $("#spinner").spinner();
+
+
+
+    $("#menu").menu();
+
+
+
+    $("#tooltip").tooltip();
+
+
+
+    $("#selectmenu").selectmenu();
+
+
+    // Hover states on the static widgets
+    $("#dialog-link, #icons li").hover(
+        function() {
+            $(this).addClass("ui-state-hover");
+        },
+        function() {
+            $(this).removeClass("ui-state-hover");
+        }
+    );
+    </script>
+</body>
+
+</html>
